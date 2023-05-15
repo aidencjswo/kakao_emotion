@@ -46,8 +46,9 @@ def find_img2():
     global img2
     img2 = pyautogui.locateOnScreen('./img/emotion2.png')
     pyautogui.moveTo(img2)
-    ml.function_1(start_mouse_x,start_mouse_y,img1,img2)
 
+def click_emoji():
+    ml.click_emoji(start_mouse_x,start_mouse_y,img1,img2)
 
 ##############################
 #mainloop() start!!
@@ -80,6 +81,9 @@ search_img2_label.pack()
 search_img2_button = tk.Button(text='CLICK',command=find_img2)
 search_img2_button.pack()
 ###
+
+click_emoji = tk.Button(text='START!!', command=click_emoji)
+click_emoji.pack()
 
 ##############################
 window.mainloop()

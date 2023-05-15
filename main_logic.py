@@ -1,6 +1,7 @@
-def function_1(x,y,img1, img2):
+import pyautogui as p
+
+def click_emoji(x,y,img1, img2):
     print(x,y)
-
-
-
-print('import_test_2')
+    p.moveTo(x,y)
+    p.moveTo(img1)
+    p.click()
