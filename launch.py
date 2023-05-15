@@ -46,8 +46,9 @@ def find_img2():
     global img2
     img2 = pyautogui.locateOnScreen('./img/emotion2.png')
     pyautogui.moveTo(img2)
+    ml.function_1(start_mouse_x,start_mouse_y,img1,img2)
 
-ml.function_1()
+
 ##############################
 #mainloop() start!!
 ##############################
