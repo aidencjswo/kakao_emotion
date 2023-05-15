@@ -38,6 +38,7 @@ start_mouse_position_description.pack()
 check_start_mouse_position = tk.Button(window,text="CHECK!",command=check_start_mouse_position)
 check_start_mouse_position.pack()
 
+print('test')
 
 ##############################
 window.mainloop()
