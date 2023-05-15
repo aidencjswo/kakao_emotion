@@ -1,5 +1,5 @@
-def function_1():
-    print('import_function_test_1')
+def function_1(x,y,img1, img2):
+    print(x,y)
 
 
 
