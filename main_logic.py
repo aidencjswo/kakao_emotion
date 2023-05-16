@@ -1,4 +1,5 @@
 import pyautogui as p
+import asyncio as a
 
 img1 = None
 img2 = None
