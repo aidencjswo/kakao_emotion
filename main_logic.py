@@ -6,12 +6,11 @@ img2 = None
 
 def click_emoji(x,y):
     p.moveTo(x,y)
-    while p.position() != (x,100):
-        p.moveTo(x,100,duration=1)
-        img1 = find_heart()
-        img2 = find_emotion(img1)
-        p.click(img2)
-        p.moveTo(x,y)
+    p.moveTo(x,100,duration=1)
+    img1 = find_heart()
+    img2 = find_emotion(img1)
+    p.click(img2)
+    p.moveTo(x,y)
 
 def find_heart():
     global img1
