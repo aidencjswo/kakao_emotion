@@ -16,16 +16,23 @@ def function_1():
             p.click(img1)
             p.click(img2)
 
-            
+
 
 def function_2():
     p.moveTo(500,1000)
     p.moveTo(500,0,duration=7)
 
+#쓰레드 생성
 function_1_thread = threading.Thread(target=function_1)
 function_2_thread = threading.Thread(target=function_2)
+
 function_1_thread.start()
 function_2_thread.start()
 
+function_1_thread.join()
 function_2_thread.join()
+
+
+for i in range(10):
+    print('반복문')
 
