@@ -51,13 +51,12 @@ def check_start_mouse_position():
 
 def click_emoji():
     print(scroll_amt)
-    ml.click_emoji(start_mouse_x,start_mouse_y,end_mouse_x,end_mouse_y,scroll_amt)
+    ml.move_mouse_thread.start()
 
 ##############################
 #mainloop() start!!
 ##############################
 
-ml
 
 ###
 start_mouse_position_description_label = tk.Label(window,text='start_mouse_position')
